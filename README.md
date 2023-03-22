@@ -15,7 +15,7 @@ This project was also made with [Insomnia version 2022.7.5](https://insomnia.res
     - [Node (REQUIRED)](#node-version-16---required-to-download-node-based-dependencies-ie-mongoose-and-express)
     - [Mongoose (REQUIRED)](#mongoose-version-692---required-to-structure-data-into-object-based-models)
     - [express (REQUIRED)](#express-version-4182---required-for-connecting-and-creating-routes-to-database-to-test-queriescrud-operations)
-    - [Insomnia (REQUIRED)](#insomnia-version-202275---recommended-as-a-develop-tool-for-testing-connections-and-express-based-routes-to-database)
+    - [Insomnia (Recommended)](#insomnia-version-202275---recommended-as-a-develop-tool-for-testing-connections-and-express-based-routes-to-database)
     - [MongoDB and MongoDB Compass (REQUIRED)](#mongodb-and-mongocompass-version-1350---required-to-host-database-mongodb-and-recommended-use-as-a-develop-tool-for-visualizing-database-while-testing-queries-mongodb-compass)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -47,18 +47,18 @@ Make sure the following are downloaded:
 * If you have Visual Code Studio, add this repository to the workspace. Then, go to 'Settings' either through the cog icon in the lower left corner and clicking Settings, go to File -> Preferences -> Settings in the menu bar, or the key combo of Ctrl+,
 
 Method 1 - Cog:
-![Finding settings through the "settings cog" icon in the lower left corner](./assets/screenshots/Finding-Settings-1.PNG)
+![Finding settings through the "settings cog" icon in the lower left corner](./assets/screenshots/Finding-Settings-1.png)
 
 Method 2 - File > Preferences > Setting:
-![Finding settings through File > Preferences > Settings in the navbar of Visual Studio Code](./assets/screenshots/Finding-Settings-2.PNG)
+![Finding settings through File > Preferences > Settings in the navbar of Visual Studio Code](./assets/screenshots/Finding-Settings-2.png)
 
 * Then, change the settings in "Terminal: Explorer Kind" to "external" in the drop down menu.
 
-![Changing "Terminal: Explorer Kind" Settings](./assets/screenshots/External-Terminal-Settings-1.PNG)
+![Changing "Terminal: Explorer Kind" Settings](./assets/screenshots/External-Terminal-Settings-1.png)
         
 * Change the filepath of the "Terminal > External: [respective operating system]" settings to the preferred command line interface program (either your system's Command Prompts's file path or Git/Git Bash's file path)
 
-![Changing "Terminal > External" Settings](./assets/screenshots/External-Terminal-Settings-2.PNG)
+![Changing "Terminal > External" Settings](./assets/screenshots/External-Terminal-Settings-2.png)
 
 * After that, right-click the repository and select "Open in External Terminal"
 
@@ -103,6 +103,8 @@ Method 2 - File > Preferences > Setting:
 * Once this repository has been reached, type in `node index.js` or `node index` into the terminal and hit `Enter`. This will start the server and allow for querying. To close the server, use the key combination of `Ctrl+C`.
 
 ## Credits
+
+* Credit to George Washington University's Full Stack Coding Camp Week 18: NoSQL Activity 25-Ins_CRUD-Subdoc for basis of the majority of code in the connection, index, routes, and models files, and Activity 28-Stu_Mini-Project for the basis of the majority of code in the model and controllers.
 
 * Schema custom and built-in validators information provided by [Mongoose](https://mongoosejs.com/):<br></br>https://mongoosejs.com/docs/validation.html
 
