@@ -18,13 +18,23 @@ module.exports = {
             )
             .catch((err) => res.status(500).json(err));
     },
-    // create a new thought
+    // create a new thought and adds thought to associated user
     createThought(req, res) {
         Thought.create(req.body)
-            .then((thought) => res.json(thought))
+            .then((_id)=>{
+            User.findOneAndUpdate(
+                { _id: req.body.userId },
+                { $addToSet: { thoughts: _id } },
+                { runValidators: true, new: true }
+            ).then((user) =>
+                    !user
+                        ? res.status(404).json({ message: 'No user with this id!' })
+                        : res.json(user)
+                )
+                .catch((err) => res.status(500).json(err))
+            })
             .catch((err) => res.status(500).json(err));
     },
-    //TODO: Add thought to associated user
     updateThought(req, res) {
         Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
