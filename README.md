@@ -96,11 +96,13 @@ Method 2 - File > Preferences > Setting:
 
 ## Usage 
 
-* A video of this application's usage can be viewed [here](#blank). If the link is non-functional, a copy of the video can be found in the "assets" folder.
+* A video of this application's usage can be viewed [here](https://drive.google.com/file/d/1l4HxoSLraysc5bvxBl-rg5Fd5SjFOH2w/view). If the link is non-functional, a copy of the video can be found in the "assets" folder.
 
-* To start further developments to this application, start by using either of the two methods described in the [Mongoose Installation Section](#mongoose-version-692---required-to-structure-data-into-object-based-models) to reach this repository through the preferred terminal.
+* To start further developments to this application, start by using either of the two methods described in the [Mongoose Installation Section](#mongoose-version-692---required-to-structure-data-into-object-based-models) to reach this repository through the preferred terminal. Use [Insomnia](https://insomnia.rest/) (or any alternative API Tester of your choice) to build, test, or edit your contributing API routes.
 
 * Once this repository has been reached, type in `node index.js` or `node index` into the terminal and hit `Enter`. This will start the server and allow for querying. To close the server, use the key combination of `Ctrl+C`.
+
+[Example screenshot of API routes in Insomnia GUI](./assets/screenshots/DEMO-1.PNG)
 
 ## Credits
 

@@ -63,7 +63,7 @@ const thoughtSchema = new Schema(
 
 function format_date(date) {
     // Format date as MM/DD/YYYY
-    return date.toLocaleDateString();
+    return date.toLocaleString();
 }
 
 // Create a virtual property `reactionCount` that gets the length of the thought's reactions array field on query
